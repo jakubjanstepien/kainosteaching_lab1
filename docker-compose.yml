@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  php:
+    container_name: myphpserver
+    image: myphpserver
+    volumes:
+      - ./src:/var/www/html/
+    ports:
+      - 8000:80
